@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="#e7f9f6"
+    tools:context="com.example.user01.pcds.ImgQuery">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="查詢"
+        android:id="@+id/selectImg"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="圖片查詢"
+        android:background="@drawable/button_event"
+        android:id="@+id/img_select"
+        android:layout_below="@+id/selectImg"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:onClick="img_select" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/edtPic"
+        android:hint="請輸入圖片編號"
+        android:layout_below="@+id/selectImg"
+        android:layout_toLeftOf="@+id/img_select"
+        android:layout_toStartOf="@+id/img_select" />
+
+    <EditText
+        android:layout_width="70dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/edtYear"
+        android:layout_marginTop="42dp"
+        android:layout_below="@+id/img_select"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:text="2016" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="年"
+        android:id="@+id/textView3"
+        android:layout_alignBottom="@+id/edtYear"
+        android:layout_toRightOf="@+id/edtYear"
+        android:layout_toEndOf="@+id/edtYear"
+        android:textSize="25dp" />
+
+    <EditText
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/edtMonth"
+        android:layout_alignTop="@+id/edtYear"
+        android:layout_toRightOf="@+id/textView3"
+        android:layout_toEndOf="@+id/textView3"
+        android:text="09" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="月"
+        android:id="@+id/textView5"
+        android:layout_alignTop="@+id/textView3"
+        android:layout_toRightOf="@+id/edtMonth"
+        android:layout_toEndOf="@+id/edtMonth"
+        android:textSize="25dp" />
+
+    <EditText
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/edtDate"
+        android:layout_alignBottom="@+id/textView5"
+        android:layout_toRightOf="@+id/textView5"
+        android:layout_toEndOf="@+id/textView5"
+        android:text="14" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="日"
+        android:id="@+id/textView6"
+        android:textSize="25dp"
+        android:layout_alignBottom="@+id/edtDate"
+        android:layout_toRightOf="@+id/edtDate"
+        android:layout_toEndOf="@+id/edtDate" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="部分紀錄"
+        android:id="@+id/partQuery"
+        android:background="@drawable/button_event"
+        android:onClick="partQuery"
+        android:nestedScrollingEnabled="false"
+        android:layout_alignBottom="@+id/textView6"
+        android:layout_alignLeft="@+id/img_select"
+        android:layout_alignStart="@+id/img_select" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="170dp"
+        android:id="@+id/imgView"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="false"
+        android:layout_alignParentBottom="true"
+        android:layout_alignTop="@+id/img_select" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:id="@+id/showImgName"
+        android:textAlignment="center"
+        android:layout_below="@+id/edtYear"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <HorizontalScrollView
+        android:id="@+id/horizontalScrollView"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:fillViewport="false"
+        android:layout_alignParentBottom="true"
+        android:layout_alignRight="@+id/partQuery"
+        android:layout_alignEnd="@+id/partQuery">
+
+    <ScrollView
+        android:id="@+id/verticalScrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#0000ff"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:id="@+id/responseTV"
+            android:text=""
+             />
+
+    </ScrollView>
+    </HorizontalScrollView>
+
+</RelativeLayout>

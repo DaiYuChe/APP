@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/showPersonData"
+            android:icon="@drawable/ic_perm_data_setting_24dp"
+            android:title="顯示個人紀錄" />
+        <item
+            android:id="@+id/general_modifyAccount"
+            android:icon="@drawable/ic_vpn_key_24dp"
+            android:title="修改名稱/密碼" />
+        <item
+            android:id="@+id/problemReturn"
+            android:icon="@drawable/ic_live_help_24dp"
+            android:title="問題回報" />
+
+    </group>
+
+</menu>

@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="#e7f9f6"
+    >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Error Message"
+        android:id="@+id/err"
+        android:layout_marginBottom="43dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Large Text"
+        android:id="@+id/tv"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="顯示資料"
+        android:id="@+id/ShowData"
+        android:layout_below="@+id/tv"
+        android:layout_centerHorizontal="true"
+        android:onClick="ShowData"
+        android:background="@drawable/button_event" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="感測器紀錄"
+        android:id="@+id/ShowSenssorRecords"
+        android:onClick="ShowSenssorRecords"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/button_event"
+        android:layout_below="@+id/ShowData"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="登出"
+        android:id="@+id/logOut"
+        android:onClick="logOut"
+        android:layout_marginTop="65dp"
+        android:background="@drawable/button_event"
+        android:nestedScrollingEnabled="false"
+        android:layout_above="@+id/err"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="修改密碼/名稱"
+        android:id="@+id/bt_modifyAccount"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/ShowSenssorRecords"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/button_event"
+        android:onClick="bt_modifyAccount" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="顯示圖片"
+        android:id="@+id/HomeShowImage"
+        android:layout_below="@+id/bt_modifyAccount"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/button_event"
+        android:onClick="HomeShowImage" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="問題回報紀錄"
+        android:id="@+id/showProblem"
+        android:onClick="showProblem"
+        android:background="@drawable/button_event"
+        android:layout_below="@+id/HomeShowImage"
+        android:layout_toStartOf="@+id/err"
+        android:layout_marginTop="20dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="樹苺派控制"
+        android:id="@+id/RaspiControl"
+        android:layout_below="@+id/showProblem"
+        android:layout_toStartOf="@+id/err"
+        android:layout_alignRight="@+id/showProblem"
+        android:background="@drawable/button_event"
+        android:layout_marginTop="20dp"
+        android:layout_alignEnd="@+id/showProblem"
+        android:onClick="RaspiControl" />
+
+
+</RelativeLayout>

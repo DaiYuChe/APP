@@ -1,0 +1,15 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.user01.test0823.MainActivity">
+    <item
+        android:id="@+id/about"
+        android:orderInCategory="100"
+        android:title="關於..">
+    </item>
+    <item
+        android:id="@+id/logout"
+        android:orderInCategory="100"
+        android:title="登出">
+    </item>
+</menu>

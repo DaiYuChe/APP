@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/ShowData"
+            android:icon="@drawable/ic_menu_slideshow"
+            android:title="顯示資料庫資料" />
+        <item
+            android:id="@+id/showPic"
+            android:icon="@drawable/ic_menu_gallery"
+            android:title="顯示圖片" />
+        <item
+            android:id="@+id/ShowSenssorRecords"
+            android:icon="@drawable/ic_menu_slideshow"
+            android:title="顯示感測器紀錄" />
+        <item
+            android:id="@+id/Control_Raspi"
+            android:icon="@drawable/ic_menu_manage"
+            android:title="控制樹苺派" />
+        <item
+            android:id="@+id/showProblem"
+            android:icon="@drawable/ic_live_help_24dp"
+            android:title="問題回報紀錄" />
+        <item
+            android:id="@+id/bt_modifyAccount"
+            android:icon="@drawable/ic_vpn_key_24dp"
+            android:title="修改名稱/密碼" />
+
+    </group>
+
+</menu>
